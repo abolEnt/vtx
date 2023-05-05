@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Tours from "./components/Tours";
+import Navbar from "./components/Navbar";
 
 const url = "https://course-api.com/react-tours-project";
 
@@ -27,6 +28,7 @@ const App = () => {
 
   return (
     <>
+    <Navbar />
       <Tours data={data} />
     </>
   );
